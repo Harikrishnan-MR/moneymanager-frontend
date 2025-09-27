@@ -2,7 +2,7 @@ import logo from "./logo.png";
 import login_bg from "./login-bg.png";
 import profile from "./hari1.jpg";
 import dashboard from "./Dashboard.png";
-import income_overview from "./income_overview.png";
+import income_overview from "./Income_overview.png";
 import {Coins, FunnelPlus, LayoutDashboard, List, Wallet} from "lucide-react";
 
 export const assets = {
