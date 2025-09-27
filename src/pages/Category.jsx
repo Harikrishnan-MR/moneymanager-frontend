@@ -8,6 +8,7 @@ import {API_ENDPOINTS} from "../util/apiEndpoints.js";
 import toast from "react-hot-toast";
 import Modal from "../components/Modal.jsx";
 import AddCategoryForm from "../components/AddCategoryForm.jsx";
+import Footer from "../components/Footer.jsx";
 
 const Category = () => {
     useUser();
@@ -101,6 +102,7 @@ const Category = () => {
     }
 
     return (
+        <>
         <Dashboard activeMenu="Category">
             <div className="my-5 mx-auto">
                 {/* Add button to add category*/}
@@ -142,6 +144,8 @@ const Category = () => {
                 </Modal>
             </div>
         </Dashboard>
+        <Footer />
+        </>
     )
 }
 

@@ -61,23 +61,24 @@ const About = () => {
         </div>
 
         {/* Right Side */}
-        <div className="md:w-1/2 flex justify-center md:justify-end md:ml-8">
-          <Tilt
-            className="w-48 h-48 sm:w-64 sm:h-64 md:w-[30rem] md:h-[30rem] border-4 border-purple-600 rounded-full"
-            tiltMaxAngleX={20}
-            tiltMaxAngleY={20}
-            perspective={1000}
-            scale={1.05}
-            transitionSpeed={1000}
-            gyroscope={true}
-          >
-            <img
-              src={assets.profile}
-              alt="Harikrishnan"
-              className="w-full h-full rounded-full object-cover drop-shadow-[0_10px_20px_rgba(126,34,206,0.4)]"
-            />
-          </Tilt>
-        </div>
+        <div className="w-full md:w-1/2 flex justify-center md:justify-end md:ml-8">
+            <Tilt
+              className="w-48 h-48 sm:w-64 sm:h-64 md:w-[30rem] md:h-[30rem] border-4 border-purple-600 rounded-full"
+              tiltMaxAngleX={20}
+              tiltMaxAngleY={20}
+              perspective={1000}
+              scale={1.05}
+              transitionSpeed={1000}
+              gyroscope={true}
+            >
+              <img
+                src={assets.profile}
+                alt="Harikrishnan"
+                className="w-full h-full rounded-full object-cover drop-shadow-[0_10px_20px_rgba(126,34,206,0.4)]"
+              />
+            </Tilt>
+          </div>
+
       </div>
     </section>
     <Footer />

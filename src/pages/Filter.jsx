@@ -7,6 +7,7 @@ import {API_ENDPOINTS} from "../util/apiEndpoints.js";
 import toast from "react-hot-toast";
 import TransactionInfoCard from "../components/TransactionInfoCard.jsx";
 import moment from "moment";
+import Footer from "../components/Footer.jsx";
 
 const Filter = () => {
     useUser();
@@ -43,6 +44,7 @@ const Filter = () => {
     }
 
     return (
+        <>
         <Dashboard activeMenu="Filters">
             <div className="my-5 mx-auto">
                 <div className="flex justify-between items-center mb-4">
@@ -118,6 +120,8 @@ const Filter = () => {
                 </div>
             </div>
         </Dashboard>
+        <Footer />
+        </>
     )
 }
 

@@ -8,6 +8,7 @@ import {API_ENDPOINTS} from "../util/apiEndpoints.js";
 import {AppContext} from "../context/AppContext.jsx";
 import {LoaderCircle} from "lucide-react";
 import Header from "../components/Header.jsx";
+import Footer from "../components/Footer.jsx";
 
 const Login = () => {
     const [email, setEmail] = useState("");
@@ -62,6 +63,7 @@ const Login = () => {
     }
 
     return (
+        <>
         <div className="h-screen w-full flex flex-col">
             <Header />
             <div className="flex-grow w-full relative flex items-center justify-center overflow-hidden">
@@ -119,7 +121,12 @@ const Login = () => {
                     </div>
                 </div>
             </div>
+           
         </div>
+        <Footer className="bg-white bg-opacity-30 text-gray-800 backdrop-blur-sm" />
+
+        </>
+        
     )
 }
 

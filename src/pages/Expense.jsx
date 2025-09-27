@@ -10,6 +10,7 @@ import ExpenseList from "../components/ExpenseList.jsx";
 import Modal from "../components/Modal.jsx";
 import AddExpenseForm from "../components/AddExpenseForm.jsx";
 import DeleteAlert from "../components/DeleteAlert.jsx";
+import Footer from "../components/Footer.jsx";
 
 const Expense = () => {
     useUser();
@@ -178,6 +179,7 @@ const Expense = () => {
     }, []);
 
     return (
+        <>
         <Dashboard activeMenu="Expense">
             <div className="my-5 mx-auto">
                 <div className="grid grid-cols-1 gap-6">
@@ -222,6 +224,8 @@ const Expense = () => {
                 </div>
             </div>
         </Dashboard>
+        <Footer />
+        </>
     );
 };
 

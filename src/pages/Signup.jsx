@@ -10,6 +10,7 @@ import {LoaderCircle} from "lucide-react";
 import ProfilePhotoSelector from "../components/ProfilePhotoSelector.jsx";
 import uploadProfileImage from "../util/uploadProfileImage.js";
 import Header from "../components/Header.jsx";
+import Footer from "../components/Footer.jsx";
 
 const Signup = () => {
     const [fullName, setFullName] = useState("");
@@ -74,6 +75,7 @@ const Signup = () => {
     }
 
     return (
+        <>
         <div className="h-screen w-full flex flex-col">
             <Header />
             <div className="flex-grow w-full relative flex items-center justify-center overflow-hidden">
@@ -151,6 +153,8 @@ const Signup = () => {
 
             </div>
         </div>
+        <Footer />
+        </>
     )
 }
 

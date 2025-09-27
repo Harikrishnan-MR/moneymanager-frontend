@@ -1,5 +1,5 @@
 
-export const BASE_URL =     import.meta.env.VITE_SERVER_URL;
+export const BASE_URL = import.meta.env.VITE_SERVER_URL;
 const CLOUDINARY_CLOUD_NAME = "dlcd3654j";
 
 export const API_ENDPOINTS = {

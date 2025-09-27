@@ -5,12 +5,11 @@ import axiosConfig from "../util/axiosConfig.jsx";
 import {API_ENDPOINTS} from "../util/apiEndpoints.js";
 import toast from "react-hot-toast";
 import IncomeList from "../components/IncomeList.jsx";
-import log from "eslint-plugin-react/lib/util/log.js";
 import Modal from "../components/Modal.jsx";
-import {Plus} from "lucide-react";
 import AddIncomeForm from "../components/AddIncomeForm.jsx";
 import DeleteAlert from "../components/DeleteAlert.jsx";
 import IncomeOverview from "../components/IncomeOverview.jsx";
+import Footer from "../components/Footer.jsx";
 
 const Income = () => {
     useUser();
@@ -158,6 +157,7 @@ const Income = () => {
     }, []);
 
     return (
+        <>
         <Dashboard activeMenu="Income">
             <div className="my-5 mx-auto">
                 <div className="grid grid-cols-1 gap-6">
@@ -199,6 +199,8 @@ const Income = () => {
                 </div>
             </div>
         </Dashboard>
+        <Footer />
+        </>
     )
 }
 
